@@ -29,14 +29,13 @@ public class ColorActivity extends AppCompatActivity {
         final ColorAdapter adapter = new ColorAdapter(ColorActivity.this, colors);
 
         spinner.setAdapter(adapter);
-        //final TextView adapter;
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 View layout = findViewById(R.id.colorLayout);
                 layout.setBackgroundColor(Color.parseColor(parent.getSelectedItem().toString()));
-                //(Color.WHITE);
+
             }
 
             @Override

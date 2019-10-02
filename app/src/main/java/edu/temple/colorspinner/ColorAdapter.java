@@ -43,7 +43,7 @@ public class ColorAdapter extends BaseAdapter {
         }
         textView.setText(colors[position]);
         //sets the selected item background to white
-        //textView.setBackgroundColor(Color.WHITE);
+        textView.setBackgroundColor(Color.WHITE);
         textView.setBackgroundColor(Color.parseColor(colors[position]));
         textView.setTextSize(40);
         textView.setTextColor(Color.GRAY);
